@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Corpo';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(../Teko/Teko-VariableFont_wght.ttf);
+}
+
+body{
+    margin: none;
+}
+
+header{
+    display: flex;
+    gap: 0px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img{
+    width: 200px;
+    height: auto;
+    margin: 0cm;
+}
+
+#Titulo{
+    display: flex;
+    flex-direction: column;
+    margin: none auto;
+}
+
+header h1{
+    color: #8B0000;
+    margin: 0;
+}
+
+header h2{
+    margin: 0;
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: Titulo;
+    font-size: 1.8rem;
+}
+
+.menu:hover{
+    font-size: 2rem;
+    color:#8B0000;
+}
