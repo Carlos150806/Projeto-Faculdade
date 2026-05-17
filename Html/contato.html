@@ -3,9 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NEW ALVES</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #ececec;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0b0b0b;
+            border-top: 4px solid #1e90ff;
+            border-bottom: 4px solid #1e90ff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+        }
+
+        .logo-text h1 {
+            color: red;
+            font-size: 22px;
+        }
+
+        .logo-text p {
+            color: #fff;
+            font-size: 12px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1e90ff;
+        }
+
+        /* CONTEÚDO */
+        .content {
+            padding: 40px 25px 60px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 40px;
+            color: #000;
+        }
+
+        .contato-area {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* FOTO */
+        .foto {
+            width: 260px;
+            height: 680px;
+            background-color: #d3d3d3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* FORMULÁRIO */
+        .formulario {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .campo {
+            margin-bottom: 45px;
+        }
+
+        .campo label {
+            display: block;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .campo input,
+        .campo textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #777;
+            background: transparent;
+            padding: 10px 5px;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .campo textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        /* INFORMAÇÕES */
+        .info {
+            width: 330px;
+        }
+
+        .info h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .instagram {
+            font-size: 38px;
+            margin: 35px 0;
+            text-align: center;
+        }
+
+        .horarios {
+            margin-top: 40px;
+        }
+
+        .horarios h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .horario-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #777;
+            padding: 12px 0;
+            font-size: 17px;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 900px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contato-area {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .foto,
+            .formulario,
+            .info {
+                width: 100%;
+            }
+
+            .foto {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+
+        <header>
+            <div class="logo-area">
+                <div class="logo"></div>
+
+                <div class="logo-text">
+                    <h1>NEW ALVES</h1>
+                    <p>Nova Força Team</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Metodologia</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h1 class="titulo">Nos contate</h1>
+
+            <div class="contato-area">
+
+                <div class="foto">
+                    Foto do espaço
+                </div>
+
+                <div class="formulario">
+
+                    <div class="campo">
+                        <label>Nome completo</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>E-mail</label>
+                        <input type="email">
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensagem</label>
+                        <textarea></textarea>
+                    </div>
+
+                </div>
+
+                <div class="info">
+                    <h2>Contato</h2>
+
+                    <p><strong>Endereço:</strong> endereço, 00 - bairro - Guarulhos</p>
+                    <p><strong>Telefone:</strong> 11 99999-9999</p>
+
+                     <div class="instagram">
+                        <a href="#" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+                    <div class="horarios">
+                        <h3>Horários</h3>
+
+                        <div class="horario-item">
+                            <span>Seg:</span>
+                            <span>00h - 00h</span>
+                        </div>
+
+                        <div class="horario-item">
+                            <span>Qua:</span>
+                            <span>00h - 00h</span>
+                        </div>
+
+                        <div class="horario-item">
+                            <span>Sex:</span>
+                            <span>00h - 00h</span>
+                        </div>
+
+                        <div class="horario-item">
+                            <span>Sáb:</span>
+                            <span>00h - 00h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
