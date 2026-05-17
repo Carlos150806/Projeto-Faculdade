@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Corpo';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(../Teko/Teko-VariableFont_wght.ttf);
+}
+
+hr{
+    background-color: #8B0000;
+    height: 1px;
+    border: none;
+}
+
+#impacto {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    gap: 500px;
+    font-family: Corpo;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#impacto img {
+    width: auto;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+}
+
+#impacto strong{
+    color: #5D1A1D;
+}
+
+button{
+    background-color: #8B0000;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    font-family: Corpo;
+    font-size: 1rem;
+}
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+#sobre img{
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#imgs{
+    display: flex;
+    gap: 50px;
+}
+
+#img01{
+    margin-bottom: 200px;
+}
+
+#img02{
+    margin-top: 200px;
+}
