@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Corpo';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(../Teko/Teko-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    background-color: #000;
+    border: 1px solid white;
+    padding: 8px 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ================= LOGO ================= */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-text h1 {
+    color: #a00000;
+    font-size: 32px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 2px;
+    line-height: 1;
+}
+
+.logo-text p {
+    color: white;
+    font-size: 24px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/* ================= MENU ================= */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #a00000;
+}
+
+/* ================= CONTATO ================= */
+
+.contato {
+    padding: 50px 40px 80px;
+    background-color: #f3f3f3;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+    color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* ================= FOTO ================= */
+
+.foto {
+    width: 340px;
+    height: 650px;
+    background-color: #d9d9d9;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= FORMULÁRIO ================= */
+
+.formulario {
+    flex: 1;
+    min-width: 320px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.campo input,
+.campo textarea {
+    border: none;
+    border-bottom: 2px solid #999;
+    background: transparent;
+    padding: 10px 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.campo textarea {
+    height: 130px;
+    resize: none;
+}
+
+/* ================= INFO ================= */
+
+.info {
+    width: 320px;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+/* ================= INSTAGRAM ================= */
+
+.instagram {
+    margin: 30px 0;
+}
+
+.instagram img {
+    width: 45px;
+    transition: 0.3s;
+}
+
+.instagram img:hover {
+    transform: scale(1.1);
+}
+
+/* ================= HORÁRIOS ================= */
+
+.horarios {
+    margin-top: 50px;
+}
+
+.horarios h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 24px;
+}
+
+.horarios p {
+    border-bottom: 1px solid #999;
+    padding: 12px 0;
+    text-align: center;
+    color: #666;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #000;
+    height: 220px;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1100px) {
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .logo-text h1 {
+        font-size: 22px;
+    }
+
+    .logo-text p {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .foto {
+        width: 100%;
+        height: 500px;
+    }
+
+    .campo label {
+        font-size: 20px;
+    }
+
+}
