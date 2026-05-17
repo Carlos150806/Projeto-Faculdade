@@ -64,3 +64,23 @@ header a {
     font-size: 2rem;
     color:#8B0000;
 }
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #a00000;
+}
