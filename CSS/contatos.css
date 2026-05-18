@@ -15,11 +15,11 @@
 }
 
 body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* ================= HEADER ================= */
+
 
 header {
     width: 100%;
@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
 }
 
-/* ================= LOGO ================= */
+
 
 .logo-area {
     display: flex;
@@ -47,7 +47,7 @@ header {
     height: 125px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .logo img {
@@ -73,7 +73,7 @@ header {
     line-height: 1.1;
 }
 
-/* ================= MENU ================= */
+
 
 nav ul {
     display: flex;
@@ -89,17 +89,17 @@ nav a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.5px;
     transition: 0.3s ease;
+    font-size: 1rem;
 }
 
 nav a:hover {
     color: #a00000;
 }
 
-/* ================= CONTATO ================= */
 
 .contato {
     padding: 50px 40px 80px;
-    background-color: #f3f3f3;
+    background-color: white;
 }
 
 .titulo {
@@ -117,7 +117,7 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* ================= FOTO ================= */
+
 
 .foto {
     width: 340px;
@@ -135,7 +135,7 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* ================= FORMULÁRIO ================= */
+
 
 .formulario {
     flex: 1;
@@ -175,7 +175,7 @@ nav a:hover {
     resize: none;
 }
 
-/* ================= INFO ================= */
+
 
 .info {
     width: 320px;
@@ -194,7 +194,7 @@ nav a:hover {
     color: #222;
 }
 
-/* ================= INSTAGRAM ================= */
+
 
 .instagram {
     margin: 30px 0;
@@ -209,7 +209,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* ================= HORÁRIOS ================= */
+
 
 .horarios {
     margin-top: 50px;
@@ -229,14 +229,13 @@ nav a:hover {
     color: #666;
 }
 
-/* ================= FOOTER ================= */
+
 
 footer {
     background-color: #000;
     height: 220px;
 }
 
-/* ================= RESPONSIVO ================= */
 
 @media (max-width: 1100px) {
 
