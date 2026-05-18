@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Corpo';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(../Teko/Teko-VariableFont_wght.ttf);
+}
+
+hr{
+    background-color: #8B0000;
+    height: 1px;
+    border: none;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* BODY */
+
+body{
+    background: #e9e9e9;
+}
+
+/* MAIN */
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 30px 0;
+}
+
+/* CARDS */
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 50px;
+}
+
+.foto{
+    width: 170px;
+    height: 170px;
+    background: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    color: black;
+
+    flex-shrink: 0;
+}
+
+.conteudo{
+    flex: 1;
+    text-align: center;
+}
+
+.conteudo h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.conteudo p{
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* FOOTER */
+
+footer{
+    background: black;
+    color: white;
+    padding: 40px 30px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* REDES */
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+
+.social-item{
+    text-align: center;
+    font-size: 13px;
+}
+
+.logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+    background: white;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+}
+
+/* HORÁRIOS */
+
+.horarios{
+    text-align: center;
+}
+
+.horarios h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.horarios p{
+    margin: 6px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+    width: 180px;
+}
+
+/* MAPA */
+
+.mapa{
+    width: 200px;
+    height: 130px;
+
+    background: #d9d9d9;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+/* MENU FOOTER */
+
+.footer-menu{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover{
+    color: #999;
+}
+
+.footer-menu p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 768px){
+
+    .card{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
