@@ -8,34 +8,6 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-
-header {
-    width: 100%;
-    background-color: #000;
-    border: 1px solid white;
-    padding: 8px 30px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
 .logo-area {
     display: flex;
     align-items: center;
@@ -72,30 +44,6 @@ header {
     font-weight: bold;
     line-height: 1.1;
 }
-
-
-
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 55px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 0.5px;
-    transition: 0.3s ease;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    color: #a00000;
-}
-
 
 .contato {
     padding: 50px 40px 80px;
