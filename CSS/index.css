@@ -85,3 +85,25 @@ button{
     flex-direction: column;
     gap: 50px;
 }
+
+.container_imagem{
+    position: relative;
+    display: inline-block;
+}
+
+.container_imagem img{
+    display: block;
+}
+
+.txt_sobreposto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F5F5F5;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+}
