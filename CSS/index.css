@@ -14,13 +14,28 @@ hr{
     border: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 #impacto {
     display: flex;
     align-items: center;
     text-align: left;
     justify-content: center;
-    gap: 500px;
+    gap: 150px;
     font-family: Corpo;
+    padding: 50px;
+}
+
+#impacto h1{
+    font-size: 5rem;
+    line-height: 4.5rem;
+}
+
+#impacto p{
+    margin-top: 50px;
+    font-size: 1.7rem;
 }
 
 #conteudo{
@@ -33,7 +48,6 @@ hr{
     width: auto;
     height: 500px;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
     margin-bottom: 70px;
 }
 
@@ -41,15 +55,19 @@ hr{
     color: #5D1A1D;
 }
 
-button{
+#impacto button{
     background-color: #8B0000;
     color: white;
     padding: 15px;
     border-radius: 15px;
     border: none;
-    width: 100%;
+    width: 500px;
     font-family: Corpo;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+#impacto a{
+    width: 500px;
 }
 
 #sobre{
@@ -96,6 +114,8 @@ button{
 }
 
 .txt_sobreposto {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,5 +125,12 @@ button{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 8px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
+
+.txt_sobreposto > a{
+    margin-top: 25px;
+}
+
