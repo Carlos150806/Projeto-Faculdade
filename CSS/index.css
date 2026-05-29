@@ -94,14 +94,47 @@ button{
     margin-bottom: 200px;
 }
 
+#img01:hover{
+    transition: all 0.5s ease;
+}
+
 #img02{
     margin-top: 200px;
+}
+
+#img02:hover{
+    transition: all 0.5s ease;
 }
 
 #txt{
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+#txt strong{
+    color: #5D1A1D;
+}
+
+#txt h2{
+    font-size: 3.5rem;
+}
+
+#txt p{
+    font-family: Corpo;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+#txt  button{
+    background-color: #8B0000;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+    font-family: Corpo;
+    font-size: 1.3rem;
 }
 
 .container_imagem{
@@ -128,9 +161,116 @@ button{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    width: 300px;
+}
+
+.txt_sobreposto h2{
+    font-family: Corpo;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.txt_sobreposto p{
+    font-family: Corpo;
+    font-size: 1.2rem;
 }
 
 .txt_sobreposto > a{
     margin-top: 25px;
 }
 
+.txt_sobreposto button{
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 150px;
+    font-family: Corpo;
+    font-size: 1rem;
+}
+
+#ser{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#txtser{
+    text-align: center;
+    margin-top: 60px;
+}
+
+#txtser h2{
+    font-family: Corpo;
+    font-size: 3.5rem;
+}
+
+#txtser p{
+    font-family: Corpo;
+    font-size: 1.5rem;
+}
+
+#servc{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.luta{
+    width: 250px;
+    height: auto;
+}
+
+.luta:hover{
+    transition: all 0.5s ease;
+}
+
+.servContainer{
+    position: relative;
+    display: inline-block;
+}
+
+.txtFlu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F5F5F5;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    width: 300px;
+}
+
+.txtFlu h2{
+    font-family: Corpo;
+    font-size: 2rem;
+}
+
+.txtFlu p{
+    font-family: Corpo;
+    font-size: 1.7;
+}
+
+.txtFlu button{
+    background-color: #8B0000;
+    color: white;
+    font-family: Corpo;
+    font-size: 1.5;
+    width: 150px;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
