@@ -224,6 +224,7 @@ button{
 .luta{
     width: 250px;
     height: auto;
+    border-radius: 15px;
 }
 
 .luta:hover{
@@ -274,3 +275,54 @@ button{
     border-radius: 15px;
     margin-top: 20px;
 }
+
+.depoimentos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .info-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .info-esquerda h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.2;
+  }
+  
+  .depoimentos button {
+    display: inline-block;
+    background-color: #8B0000;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+    width: fit-content;
+  }
+  
+  .depoimentos button:hover {
+    background-color: #a30000;
+  }
+  
+  .grade-depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+  }
+  
+  .depoimento {
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+  }
