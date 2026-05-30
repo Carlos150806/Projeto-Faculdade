@@ -63,19 +63,19 @@ header a {
 
 }
 
-.menu:hover{
+header .menu:hover{
     font-size: 2rem;
     color:#8B0000;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 55px;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: white;
     font-size: 22px;
@@ -84,7 +84,7 @@ nav a {
     transition: 0.3s ease;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #a00000;
 }
 
@@ -92,4 +92,91 @@ main{
     max-width: 1440px;
     margin: auto;
     background-color: white;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    gap: 250px;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#redes{
+    display: flex;
+    gap: 50px;
+}
+
+#redes img{
+    width: 100px;
+    border-radius: 15px;
+}
+
+#redes p{
+    font-family: Corpo;
+    text-align: center;
+    color: white;
+}
+
+#redes a{
+    text-decoration: none;
+}
+
+#pags nav{
+    display: flex;
+    gap: 15px;
+}
+
+#pags a{
+    font-family: Corpo;
+    font-family: 0.9rem;
+    text-decoration: none;
+    color: white;
+}
+
+#pags a:hover{
+    color: #8B0000;
+}
+
+#horarios{
+    width: 200px;
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+}
+
+#hrs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+#hrs h2{
+    font-family: Corpo;
+    margin-bottom: 30px;
+}
+
+#hrs p{
+    font-family: Corpo;
+}
+
+#direito p{
+    font-family: Corpo;
+    text-align: center;
+}
+
+#maps iframe{
+    margin-top: 50px;
+    padding: 0px 10px;
+    height: 300px;
+    width: 600px;
 }
