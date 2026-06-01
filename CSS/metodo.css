@@ -14,12 +14,9 @@
     gap: 50px;
 }
 
-
 body{
     background: #e9e9e9;
 }
-
-
 
 main{
     width: 100%;
@@ -76,8 +73,6 @@ main{
     flex-wrap: wrap;
 }
 
-
-
 .social{
     display: flex;
     gap: 20px;
@@ -98,20 +93,4 @@ main{
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
-}
-
-.horarios{
-    text-align: center;
-}
-
-.horarios h3{
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.horarios p{
-    margin: 6px 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #555;
-    width: 180px;
 }
