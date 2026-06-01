@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ney Alves</title>
-    <link rel="shortcut icon" href="../Imagens/logoNeySemFundo.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/contatos.css">
     <link rel="stylesheet" href="../CSS/global.css">
 </head>
 <body>
 
-
     <header >
 
-
+        <!--Imagem com link-->
         <a href="index.html"><img src="../Imagens/logoNeySemFundo.png" alt=""></a>
 
         <!--Div com nome-->
@@ -24,7 +22,7 @@
             </div>
         </a>
 
-
+        <!--Nav-->
         <nav>
             <a class="menu" href="index.html">Home</a>
             <a class="menu" href="sobreNos.html">Sobre nós</a>
@@ -34,68 +32,73 @@
         </nav>
     </header>
 
-        </header>
+    <section class="contato">
 
-        <section class="contato">
+        <h1 class="titulo">Contatos</h1>
 
-            <h1 class="titulo">Nos contate</h1>
+        <div class="conteudo">
 
-            <div class="conteudo">
+            <div class="info">
+
+                <p><strong>Telefone:</strong> (11) 93223-3990</p>
+                <p><strong>E-mail:</strong> contato@email.com</p>
+                <p><strong>Endereço:</strong> Rua Lençóis Paulista, 35 - Jardim Bela Vista</p>
+
+                <div class="instagram">
+                    <a href="https://www.instagram.com/equipenovaforcagru?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+                </div>
+
+                <div class="horarios">
+                    <h3>Horários</h3>
+
+                    <p>Seg: 00h - 00h</p>
+                    <p>Qua: 00h - 00h</p>
+                    <p>Sex: 00h - 00h</p>
+                    <p>Sab: 00h - 00h</p>
+                </div>
+
+            </div>
+
+            <div class="galeria">
 
                 <div class="foto">
                     <img src="../Imagens/fotoContato.png" alt="Foto do espaço">
                 </div>
 
-                <div class="formulario">
-                    <form>
-
-                        <div class="campo">
-                            <label>Nome completo</label>
-                            <input type="text">
-                        </div>
-
-                        <div class="campo">
-                            <label>E-mail</label>
-                            <input type="email">
-                        </div>
-
-                        <div class="campo">
-                            <label>Mensagem</label>
-                            <textarea></textarea>
-                        </div>
-
-                    </form>
-                </div>
-
-                <div class="info">
-                    <h2>Contato</h2>
-
-                    <p><strong>Endereço:</strong> Rua Lençóis Paulista, 35 Jardim Bela Vista</p>
-                    <p><strong>Telefone:</strong> 11 93223-3990</p>
-
-                    <div class="instagram">
-                        <a href="https://www.instagram.com/bronxsfightclub?igsh=MXBpODRhbW14dDJsOQ==">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
-                        </a>
-                    </div>
-
-                    <div class="horarios">
-                        <h3>Horários</h3>
-
-                        <p>Seg: 00h - 00h</p>
-                        <p>Qua: 00h - 00h</p>
-                        <p>Sex: 00h - 00h</p>
-                        <p>Sab: 00h - 00h</p>
-                    </div>
-                </div>
-
             </div>
 
-        </section>
+        </div>
 
-        <footer></footer>
+        <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.710236319617!2d-46.51939152388729!3d-23.434832256957385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52b48136c01%3A0x1c51e4ea9ff64074!2sR.%20Len%C3%A7%C3%B3is%20Paulista%2C%2035%20-%20Jardim%20Bela%20Vista%2C%20Guarulhos%20-%20SP%2C%2007132-330!5e0!3m2!1spt-BR!2sbr!4v1780162215316!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-    </div>
+    </section>
 
+    <section class="formulario-contato">
+
+        <h2>Nos contate</h2>
+
+        <form>
+
+            <input type="text" placeholder="Nome :">
+
+            <input type="email" placeholder="E-mail :">
+
+            <input type="tel" placeholder="Telefone :">
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+
+<footer>
+    <p>© 2026 Ney Alves - Todos os Direitos Autorais Reservados.</p>
+</footer>
+
+    <Script src="../JS/contato.js"></Script>
 </body>
 </html>
