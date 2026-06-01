@@ -8,27 +8,11 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
-hr{
-    background-color: #8B0000;
-    height: 1px;
-    border: none;
-}
-
 #conteudo{
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 
 
 body{
@@ -44,8 +28,6 @@ main{
     background: white;
     padding: 30px 0;
 }
-
-
 
 .card{
     display: flex;
@@ -86,12 +68,6 @@ main{
     color: #333;
 }
 
-footer{
-    background: black;
-    color: white;
-    padding: 40px 30px;
-}
-
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -116,14 +92,11 @@ footer{
     width: 65px;
     height: 65px;
     border-radius: 50%;
-
     background: white;
     color: black;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 8px;
 }
 
@@ -141,20 +114,4 @@ footer{
     padding-bottom: 5px;
     border-bottom: 1px solid #555;
     width: 180px;
-}
-
-
-
-.mapa{
-    width: 200px;
-    height: 130px;
-
-    background: #d9d9d9;
-    color: black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
 }
