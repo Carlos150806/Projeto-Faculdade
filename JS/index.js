@@ -80,6 +80,7 @@ function esconder01(){
     texto[0].style.visibility = 'hidden';
     img[0].style.width = "250px"
     img[0].style.boxShadow = "0px 0px 0px 0px rgba(0, 0, 0, 0.267)";
+    img[0].style.transition = "all 0.5s ease";
 }
 
 function esconder02(){
@@ -87,6 +88,7 @@ function esconder02(){
     texto[1].style.visibility = 'hidden';
     img[1].style.width = "250px"
     img[1].style.boxShadow = "0px 0px 0px 0px rgba(0, 0, 0, 0.267)";
+    img[1].style.transition = "all 0.5s ease";
 }
 
 function esconder03(){
@@ -94,4 +96,5 @@ function esconder03(){
     texto[2].style.visibility = 'hidden';
     img[2].style.width = "250px"
     img[2].style.boxShadow = "0px 0px 0px 0px rgba(0, 0, 0, 0.267)";
+    img[2].style.transition = "all 0.5s ease";
 }
