@@ -1,31 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const form = document.querySelector("form");
+    const cards = document.querySelectorAll(".card");
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const nome = form.querySelector('input[type="text"]').value.trim();
-        const email = form.querySelector('input[type="email"]').value.trim();
-        const telefone = form.querySelector('input[type="tel"]').value.trim();
-
-        if (nome === "" || email === "" || telefone === "") {
-            alert("Preencha todos os campos.");
-            return;
-        }
-
-        const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailValido.test(email)) {
-            alert("Digite um e-mail válido.");
-            return;
-        }
-
-        alert(
-            `Mensagem enviada com sucesso!\n\nNome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}`
-        );
-
-        form.reset();
+    // Estado inicial
+    cards.forEach(card => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(50px)";
+        card.style.transition = "all 0.8s ease";
     });
+
+    const mostrarCards = () => {
+        cards.forEach(card => {
+
+            const topoCard = card.getBoundingClientRect().top;
+            const alturaTela = window.innerHeight;
+
+            if (topoCard < alturaTela - 100) {
+                card.style.opacity = "1";
+                card.style.transform = "translateY(0)";
+            }
+        });
+    };
+
+    mostrarCards();
+
+    window.addEventListener("scroll", mostrarCards);
 
 });
