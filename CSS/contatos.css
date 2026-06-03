@@ -8,14 +8,16 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
+/* CONTATO */
+
 .conteudo{
-    font-family: Corpo, 'Times New Roman', serif;
     width: 90%;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 80px;
+    
 }
 
 .info{
@@ -23,18 +25,21 @@
 }
 
 .info p{
-    font-family: Corpo, 'Times New Roman', serif;
+    font-family: copro, sans-serif;
     font-size: 16px;
     padding: 10px 0;
     border-bottom: 1px solid #bdbdbd;
 }
 
 .info strong{
-    font-family: Corpo, 'Times New Roman', serif;
+    font-family: copro, sans-serif;
     font-weight: bold;
 }
 
+/* HORÁRIOS */
+
 .horarios{
+    font-family: corpo, sans-serif;
     margin-top: 40px;
 }
 
@@ -48,155 +53,24 @@
     text-align: center;
 }
 
-.foto{
-    width: 220px;
-    height: 320px;
-    background-color: #d9d9d9;
-    overflow: hidden;
-    margin: auto;
-}
-
-.foto img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.formulario{
-    display: none;
-}
-
-.instagram{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-.instagram img{
-    width: 45px;
-    transition: .3s;
-}
-
-.instagram img:hover{
-    transform: scale(1.1);
-}
-
-.maps{
-  width: 100%;
-    margin: 50px auto 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.maps iframe{
-    width: 90%;
-    max-width: 1200px;
-    height: 350px;
-    border: none;
-    border-radius: 10px;
-}
-
-
-.formulario-contato{
-    border-top: 1px solid #d9b8b8;
-    padding: 60px 20px;
-}
-
-.formulario-contato h2{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 40px;
-    font-family: 'Titulo';
-}
-
-.formulario-contato form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-}
-
-.formulario-contato input{
-    font-family: Corpo, 'Times New Roman', serif;;
-    width: 500px;
-    max-width: 90%;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 25px;
-    background-color: #d9d9d9;
-    font-size: 16px;
-}
-
-.formulario-contato button{
-    font-family: Corpo, 'Times New Roman', serif;
-    margin-top: 10px;
-    border: none;
-    padding: 12px 45px;
-    border-radius: 25px;
-    background-color: #cfcfcf;
-    cursor: pointer;
-    font-size: 16px;
-    transition: .3s;
-}
-
-.formulario-contato button:hover{
-    transform: scale(1.05);
-}
-
-
-footer{
-    height: 120px;
-    background-color: black;
-}
-
-
-
-@media (max-width: 900px){
-
-    .conteudo{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info{
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .foto{
-        width: 250px;
-        height: 350px;
-    }
-
-}
-
-@media (max-width: 600px){
-
-    .titulo{
-        font-size: 2.3rem;
-    }
-
-    .formulario-contato h2{
-        font-size: 2.3rem;
-    }
-
-    .foto{
-        width: 100%;
-        max-width: 280px;
-        height: 350px;
-    }
-
-}
+/* GALERIA */
 
 .galeria{
     width: 700px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
 }
+
+.area-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOTO */
 
 .foto{
     width: 450px;
@@ -216,17 +90,127 @@ footer{
 .seta{
     border: none;
     background: transparent;
-    font-size: 40px;
-    cursor: pointer;
+
+    font-size: 60px;
     font-weight: bold;
+
+    cursor: pointer;
+    transition: .3s;
 }
 
 .seta:hover{
     transform: scale(1.1);
 }
 
+/* REDES SOCIAIS */
+
+.redes{
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes a{
+    text-decoration: none;
+}
+
+.redes img{
+    width: 50px;
+    height: 50px;
+
+    transition: .3s;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+}
+
+/* MAPA */
+
+.maps{
+    width: 100%;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.maps iframe{
+    width: 90%;
+    max-width: 1200px;
+    height: 350px;
+
+    border: none;
+    border-radius: 10px;
+}
+
+/* FORMULÁRIO */
+
+.formulario-contato{
+    border-top: 1px solid #d9b8b8;
+    padding: 60px 20px;
+}
+
+.formulario-contato h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+
+    font-family: 'Titulo';
+}
+
+.formulario-contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.formulario-contato input{
+    width: 500px;
+    max-width: 90%;
+
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #d9d9d9;
+
+    font-size: 16px;
+    font-family: 'Corpo', sans-serif;
+}
+
+.formulario-contato button{
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 12px 45px;
+
+    background-color: #cfcfcf;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-family: 'Corpo', sans-serif;
+
+    transition: .3s;
+}
+
+.formulario-contato button:hover{
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
 footer{
     height: 120px;
+
     background-color: black;
 
     display: flex;
@@ -238,4 +222,59 @@ footer p{
     color: white;
     font-size: 14px;
     font-family: 'Corpo', sans-serif;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px){
+
+    .conteudo{
+        font-family: corpo, sans-serif;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info{
+        font-family: corpo, sans-serif;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .galeria{
+        width: 100%;
+    }
+
+    .foto{
+        width: 350px;
+        height: 280px;
+    }
+
+    .seta{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .titulo{
+        font-size: 2.3rem;
+    }
+
+    .formulario-contato h2{
+        font-size: 2.3rem;
+    }
+
+    .foto{
+        width: 280px;
+        height: 220px;
+    }
+
+    .seta{
+        font-size: 35px;
+    }
+
+    .redes img{
+        width: 45px;
+        height: 45px;
+    }
 }
