@@ -54,6 +54,7 @@ main{
 }
 
 .conteudo h2{
+    font-family: Corpo, 'Times New Roman', serif;
     font-size: 32px;
     margin-bottom: 15px;
     color: #111;
