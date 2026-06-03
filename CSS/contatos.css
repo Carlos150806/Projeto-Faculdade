@@ -9,6 +9,7 @@
 }
 
 .conteudo{
+    font-family: Corpo, 'Times New Roman', serif;
     width: 90%;
     margin: auto;
     display: flex;
@@ -22,12 +23,14 @@
 }
 
 .info p{
+    font-family: Corpo, 'Times New Roman', serif;
     font-size: 16px;
     padding: 10px 0;
     border-bottom: 1px solid #bdbdbd;
 }
 
 .info strong{
+    font-family: Corpo, 'Times New Roman', serif;
     font-weight: bold;
 }
 
@@ -115,30 +118,25 @@
 }
 
 .formulario-contato input{
+    font-family: Corpo, 'Times New Roman', serif;;
     width: 500px;
     max-width: 90%;
     padding: 15px 20px;
-
     border: none;
     border-radius: 25px;
-
     background-color: #d9d9d9;
     font-size: 16px;
 }
 
 .formulario-contato button{
+    font-family: Corpo, 'Times New Roman', serif;
     margin-top: 10px;
-
     border: none;
     padding: 12px 45px;
-
     border-radius: 25px;
-
     background-color: #cfcfcf;
-
     cursor: pointer;
     font-size: 16px;
-
     transition: .3s;
 }
 
