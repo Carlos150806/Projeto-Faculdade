@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Corpo';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(../Teko/Teko-VariableFont_wght.ttf);
+}
+
+
+.titulo{
+    text-align: center;
+    font-family: Titulo, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.servico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.imagem-servico{
+    width: 45%;
+}
+
+.imagem-servico .foto{
+    width: 100%;
+    height: 450px;
+    background-color: #d3d3d3;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-servico{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-servico h3{
+    font-family: Titulo, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.texto-servico p{
+    font-family: Corpo, sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.beneficios{
+    border-top: 1px solid #c8a7a7;
+    padding-top: 60px;
+    margin-top: 50px;
+}
+
+.beneficios h2{
+    text-align: center;
+    font-family: Titulo, sans-serif;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+}
+
+.beneficios-texto p{
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-family: corpo, sans-serif;
+}
+
+.beneficios-lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.beneficios-lista ul{
+    padding-left: 130px;
+    font-family: corpo, sans-serif;
+}
+
+.beneficios-imagem{
+    padding-right: 130px;
+    width: 450px;
+    flex-shrink: 0;
+    font-family: sans-serif;
+}
+
+.beneficios-imagem .foto{
+    width: 100%;
+    height: 180px;
+    background-color: #d3d3d3;
+    object-fit: cover;
+    font-family: sans-serif;
+}
+
+@media(max-width: 768px){
+
+    .servico{
+        flex-direction: column;
+    }
+
+    .imagem-servico,
+    .texto-servico{
+        width: 100%;
+    }
+
+    .beneficios-lista{
+        flex-direction: column;
+    }
+
+    .beneficios-imagem{
+        width: 100%;
+    }
+
+}
