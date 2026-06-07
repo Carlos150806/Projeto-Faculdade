@@ -15,6 +15,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+main{
+    margin-bottom: 200px;
+}
+
 .titulo {
     margin: 0;
     padding: 0;
@@ -85,7 +89,7 @@
 }
 
 #txt1 p{
-    margin-top: 10px;
+    margin-top: 50px;
     font-family: Corpo;
     font-size: 1.5rem;
     text-align: justify;
@@ -173,7 +177,7 @@
 }
 
 #txt2 p{
-    margin-top: 10px;
+    margin-top: 50px;
     font-family: Corpo;
     font-size: 1.5rem;
     text-align: justify;
@@ -188,6 +192,11 @@
 }
 
 #txt3{
+  display: flex;
+  margin-top: 50px;
+}
+
+#texto3{
     width: 600px;
     margin: auto;
 }
@@ -200,7 +209,7 @@
 }
 
 #txt3 p{
-    margin-top: 10px;
+    margin-top: 50px;
     font-family: Corpo;
     font-size: 1.5rem;
     text-align: justify;
