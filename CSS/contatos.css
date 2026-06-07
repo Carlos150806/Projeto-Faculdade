@@ -56,14 +56,43 @@
 /* GALERIA */
 
 .galeria{
-    width: 700px;
-
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 25px;
 }
 
+.centro-galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.seta{
+    background: transparent;
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+}
+
+.redes img{
+    width: 60px;
+    height: 60px;
+}
 .area-foto{
     display: flex;
     flex-direction: column;
