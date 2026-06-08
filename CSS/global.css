@@ -8,14 +8,16 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 
-header{
+/* ===== HEADER ===== */
+
+header {
     display: flex;
     gap: 0px;
     color: white;
@@ -25,32 +27,37 @@ header{
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 0 10px;
 }
 
-header img{
-    width: 200px;
+header img {
+    width: 120px;
     height: auto;
-    margin: 0cm;
+    margin: 0;
+    flex-shrink: 0;
 }
 
-#Titulo{
+#Titulo {
     display: flex;
     flex-direction: column;
-    margin: none auto;
+    margin: 0 10px;
+    flex-shrink: 0;
 }
 
-header h1{
+header h1 {
     color: #8B0000;
     margin: 0;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 
-header h2{
+header h2 {
     margin: 0;
+    font-size: clamp(0.7rem, 2vw, 1rem);
 }
 
-header nav{
+header nav {
     display: flex;
-    gap: 40px;
+    gap: clamp(15px, 3vw, 40px);
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -60,25 +67,16 @@ header a {
     color: white;
     text-decoration: none;
     font-family: Titulo;
-
 }
 
-header .menu:hover{
-    font-size: 2rem;
-    color:#8B0000;
-}
-
-header nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 55px;
+header .menu:hover {
+    color: #8B0000;
 }
 
 header nav a {
     text-decoration: none;
     color: white;
-    font-size: 22px;
+    font-size: clamp(14px, 1.5vw, 22px);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.5px;
     transition: 0.3s ease;
@@ -88,69 +86,112 @@ header nav a:hover {
     color: #a00000;
 }
 
-main{
+/* ===== HAMBURGER MENU ===== */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== MAIN ===== */
+
+main {
     max-width: 1440px;
     margin: auto;
     background-color: white;
 }
 
-footer{
+/* ===== FOOTER ===== */
+
+footer {
     display: flex;
     background-color: black;
-    gap: 200px;
+    gap: clamp(30px, 5vw, 200px);
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-#links{
+#links {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: clamp(30px, 5vw, 150px);
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
-#redes{
+#redes {
     display: flex;
-    gap: 50px;
+    gap: clamp(20px, 3vw, 50px);
+    flex-wrap: wrap;
 }
 
-#redes img{
-    width: 100px;
+#redes img {
+    width: clamp(60px, 8vw, 100px);
     border-radius: 15px;
 }
 
-#redes p{
+#redes p {
     font-family: Corpo;
     text-align: center;
     color: white;
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 
-#redes a{
+#redes a {
     text-decoration: none;
 }
 
-#pags nav{
+#pags nav {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
-#pags a{
+#pags a {
     font-family: Corpo;
-    font-family: 0.9rem;
+    font-size: 0.9rem;
     text-decoration: none;
     color: white;
 }
 
-#pags a:hover{
+#pags a:hover {
     color: #8B0000;
 }
 
-#horarios{
+#horarios {
     width: 200px;
     margin-top: 50px;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 95px;
+    gap: 60px;
 }
 
 #hrs {
@@ -160,23 +201,122 @@ footer{
     text-align: center;
 }
 
-#hrs h2{
+#hrs h2 {
     font-family: Corpo;
     margin-bottom: 30px;
 }
 
-#hrs p{
+#hrs p {
     font-family: Corpo;
 }
 
-#direito p{
+#direito p {
     font-family: Corpo;
     text-align: center;
 }
 
-#maps iframe{
+#maps iframe {
     margin-top: 50px;
     padding: 0px 10px 10px 0px;
     height: 300px;
-    width: 400px;
+    width: clamp(250px, 30vw, 400px);
+}
+
+/* ===== RESPONSIVO - TABLET ===== */
+@media (max-width: 900px) {
+    header img {
+        width: 80px;
+    }
+
+    #Titulo h1 {
+        font-size: 1.2rem;
+    }
+
+    #Titulo h2 {
+        font-size: 0.75rem;
+    }
+
+    header nav {
+        gap: 15px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+}
+
+/* ===== RESPONSIVO - MOBILE ===== */
+@media (max-width: 650px) {
+    header {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+    header img {
+        width: 65px;
+    }
+
+    #Titulo {
+        flex: 1;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        padding: 15px 0;
+        gap: 0;
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    header nav.aberto {
+        display: flex;
+    }
+
+    header nav a {
+        padding: 12px 20px;
+        font-size: 18px;
+        border-bottom: 1px solid #333;
+        text-align: left;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    #links {
+        margin-left: 0;
+        gap: 30px;
+    }
+
+    #redes {
+        justify-content: center;
+    }
+
+    #pags nav {
+        justify-content: center;
+    }
+
+    #horarios {
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #maps iframe {
+        width: 100%;
+        height: 220px;
+    }
 }

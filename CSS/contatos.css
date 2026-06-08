@@ -8,18 +8,18 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
-.contato{
-    padding: 50px;
+.contato {
+    padding: clamp(20px, 4vw, 50px);
 }
 
-.contato > h1{
+.contato > h1 {
     text-align: center;
-    font-family: corpo, sans-serif;
-    font-size: 4rem;
-    margin-bottom: 150px;
+    font-family: Corpo, sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: clamp(40px, 8vw, 150px);
 }
 
-.conteudo{
+.conteudo {
     width: 90%;
     margin: 50px auto;
     display: flex;
@@ -28,290 +28,274 @@
     gap: 80px;
 }
 
-.info{
+.info {
     width: 50%;
 }
 
-.info p{
+.info p {
     font-family: Corpo, sans-serif;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
     padding: 10px 0;
     border-bottom: 1px solid #bdbdbd;
 }
 
-.info strong{
+.info strong {
     font-family: Corpo, sans-serif;
     font-weight: bold;
 }
 
 /* HORÁRIOS */
 
-.horarios{
-    font-family: corpo, sans-serif;
+.horarios {
+    font-family: Corpo, sans-serif;
     margin-top: 60px;
 }
 
-.horarios h2{
+.horarios h2 {
     font-family: Corpo, sans-serif;
     text-align: center;
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
-.horarios p{
-    font-family: corpo, sans-serif;
+.horarios p {
+    font-family: Corpo, sans-serif;
     text-align: center;
 }
 
 /* GALERIA */
 
-.galeria{
+.galeria {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
 }
 
-.centro-galeria{
+.centro-galeria {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.foto img{
-    width: 450px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.seta{
-    background: transparent;
-    border: none;
-    font-size: 60px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.redes{
-    display: flex;
-    gap: 20px;
-}
-
-.redes img{
-    width: 60px;
-    height: 60px;
-}
-.area-foto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.foto{
-    width: 450px;
-    height: 350px;
-
+.foto {
+    width: clamp(260px, 35vw, 450px);
+    height: clamp(200px, 25vw, 350px);
     background-color: #d9d9d9;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.foto img{
+.foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.seta{
+.seta {
     border: none;
     background: transparent;
-
-    font-size: 60px;
+    font-size: clamp(35px, 5vw, 60px);
     font-weight: bold;
-
     cursor: pointer;
     transition: .3s;
 }
 
-.seta:hover{
+.seta:hover {
     transform: scale(1.1);
 }
 
-.redes{
+.redes {
     margin-top: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.redes a{
+.redes a {
     text-decoration: none;
 }
 
-.redes img{
-    width: 50px;
-    height: 50px;
-
+.redes img {
+    width: clamp(40px, 5vw, 50px);
+    height: clamp(40px, 5vw, 50px);
     transition: .3s;
 }
 
-.redes img:hover{
+.redes img:hover {
     transform: scale(1.1);
 }
 
 /* MAPA */
 
-.maps{
+.maps {
     width: 100%;
     margin: 50px auto;
-
     display: flex;
     justify-content: center;
 }
 
-.maps iframe{
+.maps iframe {
     width: 90%;
     max-width: 1200px;
-    height: 350px;
-
+    height: clamp(220px, 30vw, 350px);
     border: none;
     border-radius: 10px;
 }
 
 /* FORMULÁRIO */
 
-.formulario-contato{
+.formulario-contato {
     border-top: 1px solid #d9b8b8;
-    padding: 60px 20px;
-    font-family: corpo, sans-serif;
+    padding: clamp(30px, 5vw, 60px) 20px;
+    font-family: Corpo, sans-serif;
 }
 
-.formulario-contato h2{
-    font-family: corpo, sans-serif;
+.formulario-contato h2 {
+    font-family: Corpo, sans-serif;
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 40px;
 }
 
-.formulario-contato form{
+.formulario-contato form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 18px;
 }
 
-.formulario-contato input{
-    font-family: corpo, sans-serif;
+.formulario-contato input,
+.formulario-contato textarea {
+    font-family: Corpo, sans-serif;
     width: 500px;
     max-width: 90%;
-
     padding: 15px 20px;
-
     border: none;
     border-radius: 25px;
-
     background-color: #d9d9d9;
     font-size: 16px;
+    outline: none;
+    transition: background-color 0.2s;
 }
 
-.formulario-contato button{
-    font-family: corpo, sans-serif;
-    margin-top: 10px;
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+    background-color: #ccc;
+}
 
+.formulario-contato textarea {
+    border-radius: 15px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Mensagem de feedback */
+#feedback {
+    font-family: Corpo, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+    width: 500px;
+    max-width: 90%;
+}
+
+#feedback.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+}
+
+#feedback.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+}
+
+.formulario-contato button {
+    font-family: Corpo, sans-serif;
+    margin-top: 10px;
     border: none;
     border-radius: 25px;
-
     padding: 12px 45px;
-
-    background-color: #cfcfcf;
-
+    background-color: #8B0000;
+    color: white;
     cursor: pointer;
-
     font-size: 16px;
-
     transition: .3s;
 }
 
-.formulario-contato button:hover{
+.formulario-contato button:hover {
     transform: scale(1.05);
+    background-color: #a00000;
 }
-
-
 
 /* FOOTER */
 
-footer{
+footer {
     height: 120px;
-
     background-color: black;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer p{
+footer p {
     color: white;
-    font-size: 14px;
+    font-size: clamp(11px, 2vw, 14px);
     font-family: 'Corpo', sans-serif;
+    text-align: center;
+    padding: 0 10px;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO - TABLET */
 
-@media (max-width: 900px){
-
-    .conteudo{
-        font-family: corpo, sans-serif;
+@media (max-width: 900px) {
+    .conteudo {
         flex-direction: column;
         align-items: center;
     }
 
-    .info{
-        font-family: corpo, sans-serif;
+    .info {
         width: 100%;
         max-width: 500px;
     }
 
-    .galeria{
+    .galeria {
         width: 100%;
-    }
-
-    .foto{
-        width: 350px;
-        height: 280px;
-    }
-
-    .seta{
-        font-size: 45px;
     }
 }
 
-@media (max-width: 600px){
+/* RESPONSIVO - MOBILE */
 
-    .titulo{
+@media (max-width: 600px) {
+    .contato > h1 {
         font-size: 2.3rem;
     }
 
-    .formulario-contato h2{
+    .formulario-contato h2 {
         font-size: 2.3rem;
     }
 
-    .foto{
+    .foto {
         width: 280px;
         height: 220px;
     }
 
-    .seta{
+    .seta {
         font-size: 35px;
     }
 
-    .redes img{
+    .redes img {
         width: 45px;
         height: 45px;
+    }
+
+    .maps iframe {
+        height: 220px;
     }
 }

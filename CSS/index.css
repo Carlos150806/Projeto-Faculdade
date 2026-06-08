@@ -8,141 +8,153 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
-hr{
+hr {
     background-color: #8B0000;
     height: 1px;
     border: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
+
+/* ===== SEÇÃO IMPACTO ===== */
 
 #impacto {
     display: flex;
     align-items: center;
     text-align: left;
     justify-content: center;
-    gap: 150px;
+    gap: clamp(30px, 5vw, 150px);
     font-family: Corpo;
-    padding: 50px;
+    padding: clamp(20px, 4vw, 50px);
+    flex-wrap: wrap;
 }
 
-#impacto h1{
-    font-size: 5rem;
-    line-height: 4.5rem;
+#impacto h1 {
+    font-size: clamp(2rem, 5vw, 5rem);
+    line-height: 1.1;
 }
 
-#impacto p{
-    margin-top: 50px;
-    font-size: 1.7rem;
+#impacto p {
+    margin-top: clamp(20px, 3vw, 50px);
+    font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
-#conteudo{
+#conteudo {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    max-width: 600px;
+    flex: 1;
+    min-width: 280px;
 }
 
 #impacto img {
     width: auto;
-    height: 500px;
+    height: clamp(250px, 40vw, 500px);
     border-radius: 5px;
     margin-bottom: 70px;
+    max-width: 100%;
+    object-fit: cover;
 }
 
-#impacto strong{
+#impacto strong {
     color: #5D1A1D;
 }
 
-#impacto button{
+#impacto button {
     background-color: #8B0000;
     color: white;
     padding: 15px;
     border-radius: 15px;
     border: none;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     font-family: Corpo;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-#impacto a{
-    width: 500px;
+#impacto a {
+    width: 100%;
+    max-width: 500px;
 }
 
-#sobre{
+/* ===== SEÇÃO SOBRE ===== */
+
+#sobre {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: clamp(30px, 5vw, 200px);
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-#sobre img{
-    height: 500px;
+#sobre img {
+    height: clamp(200px, 35vw, 500px);
     width: auto;
     border-radius: 10px;
+    max-width: 100%;
 }
 
-#imgs{
+#imgs {
     margin-top: 70px;
     margin-bottom: 70px;
     display: flex;
-    gap: 50px;
+    gap: clamp(20px, 3vw, 50px);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#img01{
-    margin-bottom: 200px;
+#img01 {
+    margin-bottom: clamp(50px, 10vw, 200px);
 }
 
-#img01:hover{
-    transition: all 0.5s ease;
+#img02 {
+    margin-top: clamp(50px, 10vw, 200px);
 }
 
-#img02{
-    margin-top: 200px;
-}
-
-#img02:hover{
-    transition: all 0.5s ease;
-}
-
-#txt{
+#txt {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    max-width: 500px;
+    flex: 1;
+    min-width: 280px;
 }
 
-#txt strong{
+#txt strong {
     color: #5D1A1D;
 }
 
-#txt h2{
-    font-size: 3.5rem;
+#txt h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
-#txt p{
+#txt p {
     font-family: Corpo;
-    margin-top: 50px;
-    font-size: 1.5rem;
+    margin-top: 30px;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
-#txt  button{
+#txt button {
     background-color: #8B0000;
     color: white;
     padding: 15px;
     border-radius: 15px;
     border: none;
-    width: 300px;
+    width: clamp(200px, 30vw, 300px);
     font-family: Corpo;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
-.container_imagem{
+.container_imagem {
     position: relative;
     display: inline-block;
 }
 
-.container_imagem img{
+.container_imagem img {
     display: block;
 }
 
@@ -161,26 +173,26 @@ button{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    width: 300px;
+    width: clamp(150px, 25vw, 300px);
 }
 
-.txt_sobreposto h2{
+.txt_sobreposto h2 {
     font-family: Corpo;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);
     margin-bottom: 15px;
 }
 
-.txt_sobreposto p{
+.txt_sobreposto p {
     font-family: Corpo;
-    font-size: 1.2rem;
+    font-size: clamp(0.85rem, 1.5vw, 1.2rem);
 }
 
-.txt_sobreposto > a{
+.txt_sobreposto > a {
     margin-top: 25px;
 }
 
-.txt_sobreposto button{
+.txt_sobreposto button {
     background-color: #8B0000;
     color: white;
     padding: 10px;
@@ -191,49 +203,53 @@ button{
     font-size: 1rem;
 }
 
-#ser{
+/* ===== SEÇÃO SERVIÇOS ===== */
+
+#ser {
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-#txtser{
+#txtser {
     text-align: center;
     margin-top: 60px;
+    padding: 0 20px;
 }
 
-#txtser h2{
+#txtser h2 {
     font-family: Corpo;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     margin-bottom: 20px;
 }
 
-#txtser p{
+#txtser p {
     font-family: Corpo;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
-#servc{
+#servc {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: clamp(20px, 4vw, 100px);
     padding: 20px;
     justify-content: center;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
-.luta{
-    width: 250px;
+.luta {
+    width: clamp(150px, 20vw, 250px);
     height: auto;
     border-radius: 15px;
 }
 
-.luta:hover{
+.luta:hover {
     transition: all 0.5s ease;
     box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.267);
 }
 
-.servContainer{
+.servContainer {
     position: relative;
     display: inline-block;
 }
@@ -253,58 +269,43 @@ button{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    width: 300px;
+    width: clamp(100px, 18vw, 300px);
 }
 
-.txtFlu h2{
+.txtFlu h2 {
     font-family: Corpo;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
-.txtFlu p{
-    font-family: Corpo;
-    font-size: 1.7;
-}
+/* ===== SEÇÃO DEPOIMENTOS ===== */
 
-.txtFlu button{
-    background-color: #8B0000;
-    color: white;
-    font-family: Corpo;
-    font-size: 1.5;
-    width: 150px;
-    padding: 8px;
-    border: none;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.depoimentos{
+.depoimentos {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 200px;
-    align-items: center; 
+    gap: clamp(30px, 5vw, 200px);
+    align-items: center;
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 150px;
-  }
-  
-  
-  .info-esquerda {
-    width: 350px;
+    padding: 0 20px;
+}
+
+.info-esquerda {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 50px;
-  }
-  
-  .info-esquerda h2 {
-    font-size: 3.5rem;
+}
+
+.info-esquerda h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
     font-family: Corpo;
     color: #000;
     line-height: 1.2;
-  }
-  
-  .depoimentos button {
+}
+
+.depoimentos button {
     background-color: #8B0000;
     color: #ffffff;
     padding: 15px;
@@ -313,26 +314,96 @@ button{
     font-size: 1rem;
     width: fit-content;
     font-family: Corpo;
-  }
-  
-  .grade-depoimentos {
+}
+
+.grade-depoimentos {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
-  }
+}
 
-  .grade-depoimentos p{
+.grade-depoimentos p {
     font-family: Corpo;
-    font-size: 1.5rem;
-  }
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+}
 
-  .grade-depoimentos span{
+.grade-depoimentos span {
     font-family: Corpo;
-    font-size: 1.3rem;
-  }
-  
-  .depoimento {
+    font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+}
+
+.depoimento {
     text-align: center;
     font-size: 1rem;
     color: #000;
-  }
+}
+
+/* ===== RESPONSIVO - TABLET ===== */
+@media (max-width: 900px) {
+    #impacto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #impacto img {
+        margin-bottom: 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    #impacto a,
+    #impacto button {
+        width: 100%;
+        max-width: none;
+    }
+
+    #imgs {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #img01 {
+        margin-bottom: 0;
+    }
+
+    #img02 {
+        margin-top: 0;
+    }
+
+    .depoimentos {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+}
+
+/* ===== RESPONSIVO - MOBILE ===== */
+@media (max-width: 600px) {
+    #impacto {
+        padding: 20px 15px;
+    }
+
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grade-depoimentos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #servc {
+        gap: 25px;
+    }
+
+    .luta {
+        width: clamp(120px, 40vw, 200px);
+    }
+}

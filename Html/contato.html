@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ney Alves</title>
+    <title>Ney Alves - Contatos</title>
+    <link rel="shortcut icon" href="../Imagens/logoNeySemFundo.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/contatos.css">
     <link rel="stylesheet" href="../CSS/global.css">
 </head>
 <body>
 
-    <header >
+    <header>
+        <a href="index.html"><img src="../Imagens/logoNeySemFundo.png" alt="Logo Ney Alves"></a>
 
-        <!--Imagem com link-->
-        <a href="index.html"><img src="../Imagens/logoNeySemFundo.png" alt=""></a>
-
-        <!--Div com nome-->
         <a href="index.html">
             <div id="Titulo">
                 <h1>Ney Alves</h1>
@@ -22,7 +20,12 @@
             </div>
         </a>
 
-        <!--Nav-->
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav>
             <a class="menu" href="index.html">Home</a>
             <a class="menu" href="sobreNos.html">Sobre nós</a>
@@ -40,72 +43,58 @@
             <div class="conteudo">
 
                 <div class="info">
-
                     <p><strong>Telefone:</strong> (11) 93223-3990</p>
                     <p><strong>E-mail:</strong> contato@email.com</p>
                     <p><strong>Endereço:</strong> Rua Lençóis Paulista, 35 - Jardim Bela Vista</p>
 
                     <div class="horarios">
-
                         <h2>Horários</h2>
                         <p>Seg: 19h - 21h30</p>
                         <p>Qua: 19h - 21h30</p>
                         <p>Sex: 19h - 21h30</p>
                         <p>Sab: 10h - 12h30</p>
-
                     </div>
-
                 </div>
 
                 <div class="galeria">
-
                     <button class="seta" onclick="anterior()">❮</button>
 
-                        <div class="centro-galeria">
-
-                            <div class="foto">
-
-                                <img id="fotoCarrossel" src="../Imagens/fotoContato.png" alt="Foto da academia">
-
-                            </div>
+                    <div class="centro-galeria">
+                        <div class="foto">
+                            <img id="fotoCarrossel" src="../Imagens/fotoContato.png" alt="Foto da academia">
+                        </div>
 
                         <div class="redes">
-
                             <a href="https://www.instagram.com/equipenovaforcagru" target="_blank">
                                 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
                             </a>
-
-                            <a href="https://wa.me/5511932233990">
+                            <a href="https://wa.me/5511932233990" target="_blank">
                                 <img src="../Imagens/whatsApp.png" alt="WhatsApp">
                             </a>
-
                         </div>
+                    </div>
+
+                    <button class="seta" onclick="proxima()">❯</button>
                 </div>
 
-                <button class="seta" onclick="proxima()">❯</button>
-
             </div>
-
         </section>
 
-            <div class="maps">
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.710236319617!2d-46.51939152388729!3d-23.434832256957385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52b48136c01%3A0x1c51e4ea9ff64074!2sR.%20Len%C3%A7%C3%B3is%20Paulista%2C%2035%20-%20Jardim%20Bela%20Vista%2C%20Guarulhos%20-%20SP%2C%2007132-330!5e0!3m2!1spt-BR!2sbr!4v1780162215316!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.710236319617!2d-46.51939152388729!3d-23.434832256957385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52b48136c01%3A0x1c51e4ea9ff64074!2sR.%20Len%C3%A7%C3%B3is%20Paulista%2C%2035%20-%20Jardim%20Bela%20Vista%2C%20Guarulhos%20-%20SP%2C%2007132-330!5e0!3m2!1spt-BR!2sbr!4v1780162215316!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
         <section class="formulario-contato">
             <h2>Nos contate</h2>
 
             <form>
-
-                <input type="text" placeholder="Nome :">
-                <input type="email" placeholder="E-mail :">
-                <input type="tel" placeholder="Telefone :">
+                <input type="text" name="nome" placeholder="Nome :">
+                <input type="email" name="email" placeholder="E-mail :">
+                <input type="tel" name="telefone" placeholder="Telefone :">
+                <textarea name="mensagem" placeholder="Mensagem (opcional):"></textarea>
+                <div id="feedback"></div>
                 <button type="submit">Enviar</button>
-
             </form>
-
         </section>
     </main>
 
@@ -113,6 +102,6 @@
         <p>© 2026 Ney Alves - Todos os Direitos Autorais Reservados.</p>
     </footer>
 
-    <Script src="../JS/contato.js"></Script>
+    <script src="../JS/contato.js"></script>
 </body>
 </html>

@@ -8,99 +8,88 @@
     src: url(../Teko/Teko-VariableFont_wght.ttf);
 }
 
-#conteudo{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-body{
+body {
     background: #e9e9e9;
 }
 
-main{
+main {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     background: white;
-    padding: 30px 0;
+    padding: clamp(15px, 3vw, 30px) 0;
 }
 
-main h1{
-    margin-top: 50px;
+main h1 {
+    margin-top: clamp(30px, 5vw, 50px);
     font-family: Corpo;
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: 100px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: clamp(40px, 7vw, 100px);
+    padding: 0 20px;
 }
 
-.card{
+.card {
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding: 30px 50px;
+    gap: clamp(15px, 3vw, 30px);
+    padding: clamp(15px, 3vw, 30px) clamp(15px, 4vw, 50px);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.foto{
-    width: 170px;
-    height: 240px;
+.foto {
+    width: clamp(130px, 18vw, 170px);
+    height: clamp(180px, 22vw, 240px);
     background: #d9d9d9;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: bold;
     color: black;
-
     flex-shrink: 0;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
-.conteudo{
+.conteudo {
     flex: 1;
     text-align: center;
+    min-width: 240px;
 }
 
-.conteudo h2{
+.conteudo h2 {
     font-family: Corpo, sans-serif;
-    font-size: 32px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 15px;
     color: #111;
 }
 
-.conteudo p{
+.conteudo p {
     font-family: Corpo, sans-serif;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
     line-height: 1.6;
     color: #333;
+    text-align: justify;
 }
 
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+/* ===== RESPONSIVO - MOBILE ===== */
+@media (max-width: 550px) {
+    .card {
+        flex-direction: column;
+    }
 
-.social{
-    display: flex;
-    gap: 20px;
-}
+    .foto {
+        width: 80%;
+        max-width: 250px;
+        height: 200px;
+    }
 
-.social-item{
-    text-align: center;
-    font-size: 13px;
-}
+    .conteudo {
+        width: 100%;
+    }
 
-.logo{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    .conteudo p {
+        text-align: left;
+    }
 }
