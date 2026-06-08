@@ -226,6 +226,7 @@
 }
 
 .formulario-contato button{
+    font-family: corpo, sans-serif;
     margin-top: 10px;
 
     border: none;
