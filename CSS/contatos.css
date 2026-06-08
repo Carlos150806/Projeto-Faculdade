@@ -13,10 +13,15 @@
 }
 
 .contato > .titulo{
-    text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
     width: 100%;
-    margin: 0 auto 50px auto;
+    z-index: 1000;
+    font-family: corpo, sans-serif;
+    font-size: 4rem;
 }
 
 .conteudo{
@@ -45,18 +50,22 @@
     font-weight: bold;
 }
 
+/* HORÁRIOS */
+
 .horarios{
     font-family: corpo, sans-serif;
     margin-top: 40px;
 }
 
 .horarios h3{
+    font-family: corpo, sans-serif;
     text-align: center;
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
 
 .horarios p{
+    font-family: corpo, sans-serif;
     text-align: center;
 }
 
@@ -105,6 +114,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 
 .foto{
     width: 450px;
@@ -160,6 +170,8 @@
     transform: scale(1.1);
 }
 
+/* MAPA */
+
 .maps{
     width: 100%;
     margin: 50px auto;
@@ -177,16 +189,19 @@
     border-radius: 10px;
 }
 
+/* FORMULÁRIO */
+
 .formulario-contato{
     border-top: 1px solid #d9b8b8;
     padding: 60px 20px;
+    font-family: corpo, sans-serif;
 }
 
 .formulario-contato h2{
+    font-family: corpo, sans-serif;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
-    font-family: 'Titulo';
 }
 
 .formulario-contato form{
@@ -197,6 +212,7 @@
 }
 
 .formulario-contato input{
+    font-family: corpo, sans-serif;
     width: 500px;
     max-width: 90%;
 
@@ -206,9 +222,7 @@
     border-radius: 25px;
 
     background-color: #d9d9d9;
-
     font-size: 16px;
-    font-family: 'Corpo', sans-serif;
 }
 
 .formulario-contato button{
@@ -224,7 +238,6 @@
     cursor: pointer;
 
     font-size: 16px;
-    font-family: 'Corpo', sans-serif;
 
     transition: .3s;
 }
@@ -232,6 +245,10 @@
 .formulario-contato button:hover{
     transform: scale(1.05);
 }
+
+
+
+/* FOOTER */
 
 footer{
     height: 120px;
@@ -248,6 +265,8 @@ footer p{
     font-size: 14px;
     font-family: 'Corpo', sans-serif;
 }
+
+/* RESPONSIVO */
 
 @media (max-width: 900px){
 
