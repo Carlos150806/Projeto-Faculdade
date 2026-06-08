@@ -34,6 +34,7 @@
 }
 
 .servico{
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +79,7 @@
     font-family: Corpo, sans-serif;
     text-align: justify;
     line-height: 1.7;
+    font-size: 1.2rem;
 }
 
 .btn-servico{
@@ -105,6 +107,7 @@
     border-top: 1px solid #d8bdbd;
     padding-top: 70px;
     margin-top: 30px;
+    margin-bottom: 200px;
 }
 
 .beneficios h2{
@@ -126,6 +129,7 @@
     text-align: justify;
     line-height: 1.7;
     margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 
 .beneficios-lista{
@@ -137,7 +141,7 @@
 
 .beneficios-lista ul{
     font-family: 'Corpo', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     padding-left: 25px;
 }
@@ -162,6 +166,23 @@
 
 .beneficios-imagem .foto:hover{
     transform: scale(1.03);
+}
+
+
+.botao{
+    margin-top: 50px;
+}
+
+.botao button{
+    background-color: #8B0000;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    font-family: Corpo;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 @media (max-width: 768px){
