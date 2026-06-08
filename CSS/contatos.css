@@ -12,16 +12,11 @@
     padding: 50px;
 }
 
-.contato > .titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    isolation: isolate;
-    width: 100%;
-    z-index: 1000;
+.contato > h1{
+    text-align: center;
     font-family: corpo, sans-serif;
     font-size: 4rem;
+    margin-bottom: 150px;
 }
 
 .conteudo{
@@ -31,22 +26,21 @@
     justify-content: center;
     align-items: flex-start;
     gap: 80px;
-    
 }
 
 .info{
-    width: 35%;
+    width: 50%;
 }
 
 .info p{
-    font-family: copro, sans-serif;
-    font-size: 16px;
+    font-family: Corpo, sans-serif;
+    font-size: 1.3rem;
     padding: 10px 0;
     border-bottom: 1px solid #bdbdbd;
 }
 
 .info strong{
-    font-family: copro, sans-serif;
+    font-family: Corpo, sans-serif;
     font-weight: bold;
 }
 
@@ -54,14 +48,14 @@
 
 .horarios{
     font-family: corpo, sans-serif;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-.horarios h3{
-    font-family: corpo, sans-serif;
+.horarios h2{
+    font-family: Corpo, sans-serif;
     text-align: center;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .horarios p{
