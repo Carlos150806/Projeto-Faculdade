@@ -26,6 +26,14 @@ main{
     padding: 30px 0;
 }
 
+main h1{
+    margin-top: 50px;
+    font-family: Corpo;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 100px;
+}
+
 .card{
     display: flex;
     align-items: center;
